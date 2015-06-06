@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".VentanaReservacion" >
+
+    <TextView
+        android:id="@+id/txvTituloReservacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/areas_comunes"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/txvAreaReservacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txvTituloReservacion"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txvSeleccioneReservacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txvAreaReservacion"
+        android:text="Seleccione fecha inicial y final de la reservación:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/edtFechaFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txvFechaFinal"
+        android:layout_toRightOf="@+id/txvFechaInicio"
+        android:ems="10"
+        android:inputType="date" />
+
+    <Button
+        android:id="@+id/btnAceptarReservacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/txvFechaFinal"
+        android:layout_below="@+id/edtFechaFinal"
+        android:layout_marginTop="50dp"
+        android:text="Aceptar" />
+
+    <Button
+        android:id="@+id/btnLimpiarReservacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/edtFechaFinal"
+        android:layout_alignTop="@+id/btnAceptarReservacion"
+        android:text="Limpiar" />
+
+    <TextView
+        android:id="@+id/txvFechaFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="Fecha Final:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txvFechaInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txvSeleccioneReservacion"
+        android:layout_marginTop="36dp"
+        android:text="Fecha Inicial:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/edtFechaInicial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtFechaFinal"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/txvFechaInicio"
+        android:ems="10"
+        android:inputType="date" />
+
+</RelativeLayout>

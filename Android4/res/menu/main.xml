@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+    
+    <item  android:id="@+id/menInicio"  
+        android:title="Inicio"/>
+    
+    <item  android:id="@+id/menCartelera"  
+        android:title="Cartelera"/>
+  
+    <item  android:id="@+id/menAreas"  
+        android:title="Areas Comunes"/>  
+     
+    <item  android:id="@+id/menReclamo"  
+        android:title="Reclamos"/>  
+        
+    <item  android:id="@+id/menRecibos"  
+        android:title="Recibos"/>
+    
+    <item  android:id="@+id/menReservacion"  
+        android:title="Reservación"/>
+    
+    <item  android:id="@+id/menProveedor"  
+        android:title="Proveedores"/>
+    
+    <item  android:id="@+id/menConsultarReclamos"  
+        android:title="Consulta Reclamos"/>
+    
+    <item  android:id="@+id/menAgregarNoticia"  
+        android:title="Agregar Noticia"/>
+
+</menu>

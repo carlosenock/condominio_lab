@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android4"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.android4.VentanaPrincipal"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.android4.VentanaCartelera"
+            android:label="@string/title_activity_ventana_cartelera" >
+        </activity>
+        <activity
+            android:name="com.example.android4.VentanaAreaComun"
+            android:label="@string/title_activity_ventana_area_comun" >
+        </activity>
+        <activity
+            android:name="com.example.android4.VentanaReclamoSugerencia"
+            android:label="@string/title_activity_ventana_reclamo" >
+        </activity>
+        <activity
+            android:name="com.example.android4.VentanaAreaComunHorario"
+            android:label="@string/title_activity_ventana_area_comun_horario" >
+        </activity>
+        <activity
+            android:name="com.example.android4.VentanaCalendarioArea"
+            android:label="@string/title_activity_ventana_calendario_area" >
+        </activity>
+        <activity
+            android:name="com.example.android4.VentanaProveedor"
+            android:label="@string/title_activity_ventana_proveedor" >
+        </activity>
+        <activity
+            android:name="com.example.android4.VentanaMenu"
+            android:label="@string/title_activity_ventana_menu" >
+        </activity>
+        <activity
+            android:name="com.example.android4.VentanaReservacion"
+            android:label="@string/title_activity_ventana_reservacion" >
+        </activity>
+        <activity
+            android:name="com.example.android4.VentanaReservacionDias"
+            android:label="@string/title_activity_ventana_reservacion_dias" >
+        </activity>
+        <activity
+            android:name="com.example.android4.VentanaInmueble"
+            android:label="@string/title_activity_ventana_inmueble" >
+        </activity>
+        <activity
+            android:name="com.example.android4.VentanaConsultarReclamo"
+            android:label="@string/title_activity_ventana_agregar_noticia" >
+        </activity>
+        <activity
+            android:name="com.example.android4.VentanaReglas"
+            android:label="@string/title_activity_ventana_reglas" >
+        </activity>
+        <activity
+            android:name="com.example.android4.VentanaReservar"
+            android:label="@string/title_activity_ventana_reservar" >
+        </activity>
+        <activity
+            android:name="com.example.android4.VentanaAgregarNoticia"
+            android:label="@string/title_activity_ventana_agregar_noticia" >
+        </activity>
+        <activity
+            android:name="com.example.android4.VentanaRegistrarNuevoUsuario"
+            android:label="@string/title_activity_ventana_registrar_nuevo_usuario" >
+        </activity>
+        <activity
+            android:name="com.example.android4.VentanaOlvidoClave"
+            android:label="@string/title_activity_ventana_olvido_clave" >
+        </activity>
+        <activity
+            android:name="com.example.android4.VentanaNotificaionPago"
+            android:label="@string/title_activity_ventana_notificaion_pago" >
+        </activity>
+        <activity
+            android:name="com.example.android4.VentanaCheckout"
+            android:label="@string/title_activity_ventana_checkout" >
+        </activity>
+        <activity
+            android:name="com.example.android4.DetallereciboActivity"
+            android:label="@string/title_activity_detallerecibo" >
+        </activity>
+        <activity
+            android:name="com.example.android4.HistorialReciboActivity"
+            android:label="@string/title_activity_historial_recibo" >
+        </activity>
+    </application>
+
+</manifest>

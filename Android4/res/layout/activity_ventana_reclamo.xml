@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".VentanaReclamoSugerencia" >
+
+    <TextView
+        android:id="@+id/txvTituloReclamo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/reclamos"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/btnEnviarReclamos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/enviar" />
+
+    <Button
+        android:id="@+id/btnCancelarReclamos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/cancelar" />
+
+    <TextView
+        android:id="@+id/txvInmbuebleReclamos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txvTituloReclamo"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txvAsuntoReclamoJunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txvInmbuebleReclamos"
+        android:layout_below="@+id/txvInmbuebleReclamos"
+        android:text="Asunto:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/edtAsunto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txvAsuntoReclamoJunta"
+        android:layout_alignRight="@+id/btnCancelarReclamos"
+        android:layout_below="@+id/txvAsuntoReclamoJunta"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/txvDescripcionReclamo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtAsunto"
+        android:layout_below="@+id/edtAsunto"
+        android:text="Descripcion:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/edtDescripcionReclamo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txvDescripcionReclamo"
+        android:layout_alignRight="@+id/edtAsunto"
+        android:layout_below="@+id/txvDescripcionReclamo"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+</RelativeLayout>

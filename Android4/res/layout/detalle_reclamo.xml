@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txvAsuntoDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Asunto"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <View
+        android:id="@+id/separadorArea"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txvAsuntoDetalle"
+        android:background="@drawable/separador" />
+
+    <TextView
+        android:id="@+id/txvReclamoNumero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/separadorArea"
+        android:text="Reclamo Nº:" />
+
+    <TextView
+        android:id="@+id/txvDescripcionDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txvReclamoNumero"
+        android:layout_marginTop="14dp"
+        android:text="Detalle"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txvInmuebleDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txvDescripcionDetalle"
+        android:text="Inmueble" />
+
+    <Button
+        android:id="@+id/btnAceptarDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txvInmuebleDetalle"
+        android:layout_centerHorizontal="true"
+        android:text="OK" />
+
+    <TextView
+        android:id="@+id/txvFechaDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/txvReclamoNumero"
+        android:text="Fecha"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

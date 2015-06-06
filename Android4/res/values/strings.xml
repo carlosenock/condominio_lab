@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name" text-align="center">Sistema de Gestión de Condominios</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_ventana_cartelera">VentanaCartelera</string>
+    <string name="title_activity_ventana_area_comun">VentanaAreaComun</string>
+    <string name="title_activity_ventana_reclamo">VentanaReclamo</string>
+    <string name="title_activity_ventana_area_comun_horario">VentanaAreaComunHorario</string>
+    <string name="title_activity_ventana_calendario_area">VentanaCalendarioArea</string>
+    <string name="title_activity_ventana_proveedor">Proveedores</string>
+    <string name="title_activity_ventana_menu">Menú Principal</string>
+    <string name="title_activity_ventana_reservacion">VentanaReservacion</string>
+    <string name="title_activity_ventana_reservacion_dias">VentanaReservacionDias</string>
+    <string name="areas_comunes">Area Comunes</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="reclamos">Reclamos y Sugerencias</string>
+    <string name="enviar">Enviar</string>
+    <string name="title_activity_ventana_inmueble">VentanaInmueble</string>
+    <string name="sistema">Sistema de Gestión de Condominio</string>
+    <string name="title_activity_ventana_agregar_noticia">VentanaAgregarNoticia</string>
+    <string name="title_activity_ventana_reglas">VentanaReglas</string>
+    <string name="reglas">Reglas del Area</string>
+    <string name="title_activity_ventana_reservar">VentanaReservar</string>
+    <string name="acceder_login">Acceder</string>
+    <string name="title_activity_ventana_registrar_nuevo_usuario">VentanaRegistrarNuevoUsuario</string>
+    <string name="title_activity_ventana_olvido_clave">VentanaOlvidoClave</string>
+    <string name="title_activity_ventana_notificaion_pago">VentanaNotificaionPago</string>
+    <string name="title_activity_ventana_checkout">VentanaCheckout</string>
+    <string name="Mensaje_checkout_exito">Se ha enviado la notificación de pago</string>
+    <string name="Mensaje_checkout_fallo">Se ha producido un error al enviar la notificacion</string>
+    <string name="nota_checkout_exito">Solo cuando sea verificada  la notificación de pago se le descontara el monto pagado a la deuda pendiente, el proceso de verificacion puede tardar 24H luego de la notificacion de pago.</string>
+    <string name="nota_checkout_fallo">Intente más tarde, de continuar la falla comuniquese con su administrador de plataforma</string>
+    <string name="title_activity_detallerecibo">DetallereciboActivity</string>
+    <string name="title_activity_historial_recibo">HistorialReciboActivity</string>
+
+</resources>

@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".VentanaPrincipal"
+    android:background="@drawable/background_menu_bottom" >
+
+    <TextView
+        android:id="@+id/tvClave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txvUsuario"
+        android:layout_below="@+id/edtUsuario"
+        android:layout_marginTop="27dp"
+        android:text="Clave:"
+        android:textSize="16sp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black"/>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logonuevo" />
+
+    <EditText
+        android:id="@+id/edtUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txvUsuario"
+        android:layout_centerHorizontal="true"
+        android:ems="10">
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edtClave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtUsuario"
+        android:layout_below="@+id/tvClave"
+        android:ems="10"
+        android:inputType="textPassword" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/txvUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtUsuario"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="16dp"
+        android:text="Usuario:"
+        android:textSize="16sp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="90dp"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/edtClave"
+        android:layout_below="@+id/edtClave"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_selector"
+        android:text="@string/acceder_login"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btnRegistrarLogin"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="90dp"
+        android:layout_height="35dp"
+        android:layout_alignBaseline="@+id/btnLogin"
+        android:layout_alignBottom="@+id/btnLogin"
+        android:layout_alignRight="@+id/edtUsuario"
+        android:background="@drawable/button_selector"
+        android:text="Regístrate"
+        android:textSize="15sp"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btnOlvidoClave"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="160dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/btnRegistrarLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/button_selector"
+        android:text="¿Olvidó su clave?"
+        android:textSize="15sp"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
